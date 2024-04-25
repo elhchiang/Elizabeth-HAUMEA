@@ -9,7 +9,7 @@ footer.appendChild(copyright);
 document.body.appendChild(footer);
 
 
-const skills = ["Doughnuts", "Fruits", "Vegetables", "Dim Sum Sets"];
+const skills = ["Tunisian crochet", "Pattern writing", "Freeform designs", "Amigurumi", "Filet crochet", "Micro crochet" ];
 const skillsSection = document.getElementById("Skills");
 let skillsList = document.createElement("ul");
 skillsSection.appendChild(skillsList);
