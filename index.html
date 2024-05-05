@@ -48,7 +48,6 @@
 
 <div class="main">
   <h2>Upcoming Events</h2>
-  <h5></h5>
   <section id="Events"></section>
   <div class="ex-flex-container">
         <div class="ex-item"> 
@@ -83,7 +82,7 @@
         <br>
       <h2>Skills</h2>
       <section id="Skills"></section>
-      <ul></ul>
+      <br>
       <h2>Past Projects</h2>
       <section id="Projects"></section>
       <div class="ex-flex-container">
@@ -103,13 +102,55 @@
             </div>
             </div>
             </div>
- </div>
+      <h2>Connect</h2>
+      <section id="Connect"></section>
+      <div class="socials">
+        <a href="https://www.instagram.com/crumbs_and_stuff"> <img src="images/IG.jpgs" alt= "IG logo" style="width: 50px; border-radius: 10%;"></a> 
+        <a href="https://www.mercari.com/u/322276207/"> <img src="images/mercari.png" alt= "mercari logo" style="width: 50px; border-radius: 10%;"></a>
+        <a href="https://www.roc-aob.com"> <img src="images/website_vector.jpg" alt= "website" style="width: 50px; border-radius: 10%;"></a> 
+        </div>
+        <br>
+        <br>
 <div class="footer">
-  <h2>Follow me on Instagram!</h2>
-  <section id="Connect"></section>
-  <div class="socials">
-    <a href="https://www.instagram.com/crumbs_and_stuff"> <img src="images/IG.png" alt= "IG logo" style="width:50px; border-radius: 20%;"></a>
+<section>
+  <h2>Leave a Message</h2>
+  <form id="messageForm" name="leave_message" autocomplete="on">
+    <label for="usersNameId">Users Name: </label>
+    <input 
+       type="text" 
+       name="usersName" 
+       id="usersNameId" 
+       required="true" 
+    /><br><br />
+    <label for="emailId">Email: </label>
+    <input 
+       type="text" 
+       name="email" 
+       id="emailId" 
+       required="true" 
+       autocomplete="on" 
+    /><br><br />
+    <label for="usersMessageId">Users Message: </label>
+    <input 
+      type="text" 
+       name="usersMessage" 
+       id="usersMessageId" 
+      required="true" 
+    /><br><br />
+    <button type="submit" class="button" name="submitButton">
+       Submit
+    </button>
+  </form>
+</section>
+ <section id="messages">
+  <h2>Messages</h2>
+  <div class="message-container">
+    <ul></ul>
   </div>
+ </section>
+</div>
+</div>
+
 <script src="js/index.js"></script>
 </body>
 </html>

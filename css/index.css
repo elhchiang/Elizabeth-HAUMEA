@@ -2,7 +2,7 @@ body {
   font-family: 'Courier New', Courier, monospace;
   margin: 0;
   color: #071013;
-  text-align: center;
+  text-align: left;
 }
 
 .header {
@@ -141,15 +141,14 @@ img {
 
 /* Change color on hover */
 .socials a:hover {
-  background-color: #e2eaed;
-  color: #071013;
+  background-color: #c7c6c6;
+  color: #036903;
 }
 
 .footer {
-  padding: 20px;
-  text-align: center;
-  background: #071013;
-  color: #e2eaed;
+  padding: 10px;
+  text-align: centre;
+  background: #b8b6b6;
   overflow: hidden;
   width: 100%;
 }
