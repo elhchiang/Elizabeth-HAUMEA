@@ -77,3 +77,32 @@ console.log(messageForms);
 const messageForm = messageForms[0];
 console.log(messageForms);
 messageForm.addEventListener("submit", onFormSubmit);
+
+fetch("https://api.github.com/users/elhchiang/repos")
+
+.then((response) => {
+  if (!response.ok) {
+    throw new Error ("Request failed");
+  }
+  return response.json();
+})
+
+.then ((data) => {
+  repositories = [...data];
+  console.log (repositories);
+  
+  const projectSection = document.getElementById("projects-section");
+  const projectList = projectSection.getElementsByTagName("ul");
+
+  for (let i=0; i < repositories.length; i++) {
+    var project = document.createElement("li");
+    project.innerText = repositories[i].html_url;
+    console.log(project);
+    projectList[0].appendChild(project);
+  }
+})
+
+.catch((error) => {
+  console.error("An Error occurred:", error);
+});
+
