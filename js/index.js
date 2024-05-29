@@ -1,3 +1,5 @@
+/* footer copyright with CURRENT date */
+
 const currentDate = new Date();
 const thisYear = currentDate.getFullYear();
 
@@ -8,6 +10,7 @@ copyright.innerHTML = `<small>Elizabeth Chiang &copy; ${thisYear}<small>`;
 footer.appendChild(copyright);
 document.body.appendChild(footer);
 
+/* list of skills in a changeable array */
 
 const skills = ["Tunisian Crochet", "Amigurumi", "Freeform Crochet", "Pattern Writing"];
 const skillsSection = document.getElementById("Skills");
@@ -20,10 +23,14 @@ for (let skill of skills) {
   skillsList.appendChild(skillItem);
 }
 
+/* how to remove messages from the message section */
+
 function onRemoveButton(event) {
   console.log("Remove");
   const entry = event.target.parentNode
   entry.remove();
+
+ /* add messages from the message section */
 
 const messageSection = document.getElementById("messages");
 const messageList = messageSection.getElementsByTagName("li");
@@ -77,6 +84,8 @@ console.log(messageForms);
 const messageForm = messageForms[0];
 console.log(messageForms);
 messageForm.addEventListener("submit", onFormSubmit);
+
+/* GITHUB API for list of projects - make clickable?? */
 
 fetch("https://api.github.com/users/elhchiang/repos")
 

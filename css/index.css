@@ -5,6 +5,8 @@ body {
   text-align: left;
 }
 
+/* top section with title and short blurb and group pic */
+
 .header {
   padding: 80px;
   text-align: left;
@@ -34,14 +36,18 @@ h2  {
   font-family: Helvetica, sans-serif;
 }
 
+/* the whole nav bar */
+
 .navbar {
   overflow: hidden;
   background-color: #071013;
+  position: fixed;
+  width: 100%;
 }
 
-/* Style the nav bar links */
+/* style the nav bar links */
 .navbar a {
-  float: right;
+  float: left;
   display: block;
   color: #e2eaed;
   text-align: center;
