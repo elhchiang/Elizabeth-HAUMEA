@@ -23,6 +23,13 @@ for (let skill of skills) {
   skillsList.appendChild(skillItem);
 }
 
+/* toggle between light and dark mode */
+
+
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
 /* how to remove messages from the message section */
 
 function onRemoveButton(event) {
